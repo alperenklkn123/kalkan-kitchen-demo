@@ -1,0 +1,18 @@
+[
+  {
+    "name": "chicken-burger",
+    "prompt": "Use case: product-mockup. Asset: isolated premium restaurant menu photograph. Subject: A crispy chicken burger in a golden brioche bun, one crunchy fried chicken fillet, green lettuce, pickles and creamy sauce. No beef. One whole item centered in a square canvas with 12% margins, elevated three-quarter view. Warm directional studio lighting from upper left, photorealistic appetizing textures. Truly transparent alpha background. No surface, backdrop, table, utensils, text, branding or watermark."
+  },
+  {
+    "name": "wok-noodles",
+    "prompt": "Use case: product-mockup. Asset: isolated premium restaurant menu photograph. Subject: A matte black bowl of stir-fried wheat noodles with bell pepper strips, broccoli, carrot, scallions and sesame. No broth or eggs. One whole item centered in a square canvas with 12% margins, elevated three-quarter view. Warm directional studio lighting from upper left, photorealistic appetizing textures. Truly transparent alpha background. No surface, backdrop, table, utensils, text, branding or watermark."
+  },
+  {
+    "name": "lemonade",
+    "prompt": "Use case: product-mockup. Asset: isolated premium restaurant menu photograph. Subject: One tall clear drinking glass of pale yellow fresh lemonade, ice cubes, lemon slice and mint sprig. No straw. One whole item centered in a square canvas with 12% margins, elevated three-quarter view. Warm directional studio lighting from upper left, photorealistic appetizing textures. Truly transparent alpha background. No surface, backdrop, table, utensils, text, branding or watermark."
+  },
+  {
+    "name": "iced-tea",
+    "prompt": "Use case: product-mockup. Asset: isolated premium restaurant menu photograph. Subject: One tall clear drinking glass of amber peach iced tea, ice cubes, one peach slice and mint sprig. No straw. One whole item centered in a square canvas with 12% margins, elevated three-quarter view. Warm directional studio lighting from upper left, photorealistic appetizing textures. Truly transparent alpha background. No surface, backdrop, table, utensils, text, branding or watermark."
+  }
+]
