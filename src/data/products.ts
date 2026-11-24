@@ -1,181 +1,412 @@
 import type { Product } from "@/types/product";
 
-/** Example catalogue. Prices in TRY; replace with the real menu. */
 export const products: Product[] = [
   {
-    id: "napolitan-pizza",
-    name: "Margherita",
-    category: "Pizza",
-    sceneWord: "PIZZA",
-    headline: ["Napoli ruhu.", "Kalkan dokunuşu."],
-    description:
-      "İncecik bir taban, kabaran kenarlar. Domates, mozzarella ve taze fesleğenin en sade, en güzel hâli.",
-    price: 420,
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/pizza.webp`,
-    imageAlt: "Kabarık kenarlı, mozzarella ve taze fesleğenli Napolitan pizza",
-    note: "Az malzeme. Çok karakter.",
-    detail: "Napolitan usulü · 30 cm",
-    ingredients: ["Mozzarella", "Domates", "Taze fesleğen"],
-    allergens: "Gluten, süt",
-    theme: {
-      base: "#1e241a",
-      glow: "#6f7939",
-      accent: "#e6edaa",
-    },
-    categoryId: "pizza",
+    "id": "filter-coffee",
+    "name": "Filter Coffee",
+    "category": "Coffee",
+    "categoryId": "coffee",
+    "sceneWord": "COFFEE",
+    "headline": [
+      "Filter Coffee",
+      "Fuel your day."
+    ],
+    "description": "Kahve molanı SHAPE'te ver.",
+    "price": 120,
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/filter-coffee.svg`,
+    "imageAlt": "Filter Coffee ürün illüstrasyonu",
+    "note": "SHAPE TRAINING CLUB · KALKAN",
+    "detail": "SHAPE Bar",
+    "ingredients": [],
+    "allergens": "İçerik ve alerjen bilgisi için ekibimize danışın.",
+    "theme": {
+      "base": "#071426",
+      "glow": "#57432b",
+      "accent": "#ffda28"
+    }
   },
   {
-    id: "miso-ramen",
-    name: "Miso Ramen",
-    category: "Asia Kitchen",
-    sceneWord: "RAMEN",
-    headline: ["Bir kase sıcaklık.", "Bir dünya lezzet."],
-    description:
-      "Yoğun miso suyu, ipeksi noodle, shiitake mantarı ve tam kıvamında yumurta. Her kaşıkta biraz daha iyi.",
-    price: 390,
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/ramen.webp`,
-    imageAlt: "Mantar, yeşil soğan ve iki yarım yumurtalı miso ramen kasesi",
-    note: "İyi şeyler zaman ister.",
-    detail: "Miso suyu · 1 kase",
-    ingredients: ["Miso", "Shiitake", "Yumurta"],
-    allergens: "Gluten, soya, yumurta, susam",
-    theme: {
-      base: "#2c1915",
-      glow: "#ad5831",
-      accent: "#f1c59c",
-    },
-    categoryId: "asia",
+    "id": "espresso",
+    "name": "Espresso",
+    "category": "Coffee",
+    "categoryId": "coffee",
+    "sceneWord": "COFFEE",
+    "headline": [
+      "Espresso",
+      "Fuel your day."
+    ],
+    "description": "Kahve molanı SHAPE'te ver.",
+    "price": 90,
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/espresso.svg`,
+    "imageAlt": "Espresso ürün illüstrasyonu",
+    "note": "SHAPE TRAINING CLUB · KALKAN",
+    "detail": "SHAPE Bar",
+    "ingredients": [],
+    "allergens": "İçerik ve alerjen bilgisi için ekibimize danışın.",
+    "theme": {
+      "base": "#071426",
+      "glow": "#57432b",
+      "accent": "#ffda28"
+    }
   },
   {
-    id: "smash-burger",
-    name: "Double Smash",
-    category: "Burgerler",
-    sceneWord: "BURGER",
-    headline: ["İlk ısırıkta", "aklını alır."],
-    description:
-      "İki ince köfte, eriyen cheddar ve yumuşacık brioche. Biraz çıtır, biraz dağınık, tam olması gerektiği gibi.",
-    price: 460,
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/burger.webp`,
-    imageAlt: "Brioche ekmeğinde çift köfteli, cheddar peynirli smash burger",
-    note: "İki kat lezzet. Tek favori.",
-    detail: "Çift köfte · Brioche",
-    ingredients: ["Dana köfte", "Cheddar", "Ev sosu"],
-    allergens: "Gluten, süt, yumurta, susam, hardal",
-    theme: {
-      base: "#302010",
-      glow: "#ae791f",
-      accent: "#f5d994",
-    },
-    categoryId: "burgers",
+    "id": "double-espresso",
+    "name": "Double Espresso",
+    "category": "Coffee",
+    "categoryId": "coffee",
+    "sceneWord": "COFFEE",
+    "headline": [
+      "Double Espresso",
+      "Fuel your day."
+    ],
+    "description": "Kahve molanı SHAPE'te ver.",
+    "price": 140,
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/double-espresso.svg`,
+    "imageAlt": "Double Espresso ürün illüstrasyonu",
+    "note": "SHAPE TRAINING CLUB · KALKAN",
+    "detail": "SHAPE Bar",
+    "ingredients": [],
+    "allergens": "İçerik ve alerjen bilgisi için ekibimize danışın.",
+    "theme": {
+      "base": "#071426",
+      "glow": "#57432b",
+      "accent": "#ffda28"
+    }
   },
   {
-    id: "crispy-chicken",
-    name: "Crispy Chicken",
-    category: "Burgerler",
-    sceneWord: "BURGER",
-    headline: ["Dışı çıtır.", "İçi tam kıvamında."],
-    description:
-      "Altın renkli çıtır tavuk, taze marul ve ev sosu. Yumuşak brioche içinde bolca lezzet.",
-    price: 410,
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/chicken-burger.webp`,
-    imageAlt: "Brioche ekmeğinde çıtır tavuk burger",
-    note: "Çıtırtısı bile güzel.",
-    detail: "Çıtır tavuk · Brioche",
-    ingredients: ["Çıtır tavuk", "Marul", "Ev sosu"],
-    allergens: "Gluten, süt, yumurta, susam, hardal",
-    theme: {
-      base: "#332515",
-      glow: "#bc862b",
-      accent: "#f3d8a0",
-    },
-    categoryId: "burgers",
+    "id": "americano",
+    "name": "Americano",
+    "category": "Coffee",
+    "categoryId": "coffee",
+    "sceneWord": "COFFEE",
+    "headline": [
+      "Americano",
+      "Fuel your day."
+    ],
+    "description": "Kahve molanı SHAPE'te ver.",
+    "price": 150,
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/americano.svg`,
+    "imageAlt": "Americano ürün illüstrasyonu",
+    "note": "SHAPE TRAINING CLUB · KALKAN",
+    "detail": "SHAPE Bar",
+    "ingredients": [],
+    "allergens": "İçerik ve alerjen bilgisi için ekibimize danışın.",
+    "theme": {
+      "base": "#071426",
+      "glow": "#57432b",
+      "accent": "#ffda28"
+    }
   },
   {
-    id: "wok-noodles",
-    name: "Sebzeli Wok Noodle",
-    category: "Asia Kitchen",
-    sceneWord: "WOK",
-    headline: ["Wok ateşinden,", "taptaze sofrana."],
-    description:
-      "Wok’ta çevrilmiş noodle, rengârenk sebzeler ve susam. Hafif çıtır dokular, dengeli bir sos.",
-    price: 340,
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/wok-noodles.webp`,
-    imageAlt: "Biber, brokoli ve havuçlu sebzeli wok noodle kasesi",
-    note: "Renkli, taze, bol lezzetli.",
-    detail: "Sebzeli noodle · 1 kase",
-    ingredients: ["Noodle", "Mevsim sebzeleri", "Susam"],
-    allergens: "Gluten, soya, susam",
-    theme: {
-      base: "#192c27",
-      glow: "#477d62",
-      accent: "#c9e2b4",
-    },
-    categoryId: "asia",
+    "id": "iced-americano",
+    "name": "Iced Americano",
+    "category": "Coffee",
+    "categoryId": "coffee",
+    "sceneWord": "COFFEE",
+    "headline": [
+      "Iced Americano",
+      "Fuel your day."
+    ],
+    "description": "Kahve molanı SHAPE'te ver.",
+    "price": 200,
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/iced-americano.svg`,
+    "imageAlt": "Iced Americano ürün illüstrasyonu",
+    "note": "SHAPE TRAINING CLUB · KALKAN",
+    "detail": "SHAPE Bar",
+    "ingredients": [],
+    "allergens": "İçerik ve alerjen bilgisi için ekibimize danışın.",
+    "theme": {
+      "base": "#071426",
+      "glow": "#57432b",
+      "accent": "#ffda28"
+    }
   },
   {
-    id: "funghi-pizza",
-    name: "Funghi",
-    category: "Pizza",
-    sceneWord: "PIZZA",
-    headline: ["Fırından sıcak.", "Mantarı bol."],
-    description:
-      "Napolitan hamur üzerinde mozzarella, mantar ve kekik. Sade malzemelerin doyurucu buluşması.",
-    price: 460,
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/funghi-pizza.webp`,
-    imageAlt: "Mozzarella, mantar ve kekikli Napolitan Funghi pizza",
-    note: "Ormandan bir dokunuş.",
-    detail: "Napolitan usulü · 30 cm",
-    ingredients: ["Mozzarella", "Mantar", "Kekik"],
-    allergens: "Gluten, süt",
-    theme: {
-      base: "#29261c",
-      glow: "#81723c",
-      accent: "#e5ddb0",
-    },
-    categoryId: "pizza",
+    "id": "protein-shake",
+    "name": "Protein Shake",
+    "category": "Protein Shakes",
+    "categoryId": "shakes",
+    "sceneWord": "PROTEIN",
+    "headline": [
+      "Protein Shake",
+      "Fuel your day."
+    ],
+    "description": "Gerçek meyveler, whey, buz ve su. Aroma ve ilaveler için ekibimize danış.",
+    "price": 350,
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/protein-shake.svg`,
+    "imageAlt": "Protein Shake ürün illüstrasyonu",
+    "note": "SHAPE TRAINING CLUB · KALKAN",
+    "detail": "SHAPE Bar",
+    "ingredients": [],
+    "allergens": "İçerik ve alerjen bilgisi için ekibimize danışın.",
+    "theme": {
+      "base": "#071426",
+      "glow": "#75612c",
+      "accent": "#ffda28"
+    }
   },
   {
-    id: "lemonade",
-    name: "Ev Yapımı Limonata",
-    category: "İçecekler",
-    categoryId: "drinks",
-    sceneWord: "FERAH",
-    headline: ["Bir yudum güneş.", "İçin ferahlasın."],
-    description:
-      "Limonun canlı tadı, buz ve taze nane. Yemeğine serin bir eşlikçi.",
-    price: 120,
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/lemonade.webp`,
-    imageAlt: "Buz, limon ve naneli limonata bardağı",
-    note: "Tazeliğin en serin hâli.",
-    detail: "Soğuk içecek · 350 ml",
-    ingredients: ["Limon", "Nane", "Buz"],
-    allergens: "Tarife göre doğrulanmalıdır",
-    theme: {
-      base: "#23311d",
-      glow: "#85983e",
-      accent: "#e7efae",
-    },
+    "id": "iced-protein-coffee",
+    "name": "Iced Protein Coffee",
+    "category": "Protein Shakes",
+    "categoryId": "shakes",
+    "sceneWord": "PROTEIN",
+    "headline": [
+      "Iced Protein Coffee",
+      "Fuel your day."
+    ],
+    "description": "Gerçek meyveler, whey, buz ve su ile hazırlanan protein shake seçenekleri.",
+    "price": 350,
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/iced-protein-coffee.svg`,
+    "imageAlt": "Iced Protein Coffee ürün illüstrasyonu",
+    "note": "SHAPE TRAINING CLUB · KALKAN",
+    "detail": "SHAPE Bar",
+    "ingredients": [],
+    "allergens": "İçerik ve alerjen bilgisi için ekibimize danışın.",
+    "theme": {
+      "base": "#071426",
+      "glow": "#75612c",
+      "accent": "#ffda28"
+    }
   },
   {
-    id: "peach-iced-tea",
-    name: "Şeftalili Ice Tea",
-    category: "İçecekler",
-    categoryId: "drinks",
-    sceneWord: "BUZLU",
-    headline: ["Serin bir mola.", "Şeftali tadında."],
-    description:
-      "Demlenmiş çay, şeftalinin meyvemsi tadı ve bol buz. Günün temposuna küçük bir mola.",
-    price: 110,
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/iced-tea.webp`,
-    imageAlt: "Buz ve şeftali dilimli soğuk çay bardağı",
-    note: "Yavaşla. Bir yudum al.",
-    detail: "Soğuk çay · 350 ml",
-    ingredients: ["Çay", "Şeftali", "Buz"],
-    allergens: "Tarife göre doğrulanmalıdır",
-    theme: {
-      base: "#322119",
-      glow: "#b66d3e",
-      accent: "#f3d0ae",
-    },
+    "id": "isolated-whey",
+    "name": "Isolated Pure Whey Shake",
+    "category": "Protein Shakes",
+    "categoryId": "shakes",
+    "sceneWord": "PROTEIN",
+    "headline": [
+      "Isolated Pure Whey Shake",
+      "Fuel your day."
+    ],
+    "description": "Gerçek meyveler, whey, buz ve su ile hazırlanan protein shake seçenekleri.",
+    "price": 400,
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/isolated-whey.svg`,
+    "imageAlt": "Isolated Pure Whey Shake ürün illüstrasyonu",
+    "note": "SHAPE TRAINING CLUB · KALKAN",
+    "detail": "SHAPE Bar",
+    "ingredients": [],
+    "allergens": "İçerik ve alerjen bilgisi için ekibimize danışın.",
+    "theme": {
+      "base": "#071426",
+      "glow": "#75612c",
+      "accent": "#ffda28"
+    }
   },
+  {
+    "id": "creatine",
+    "name": "Creatine (Add-on)",
+    "category": "Protein Shakes",
+    "categoryId": "shakes",
+    "sceneWord": "PROTEIN",
+    "headline": [
+      "Creatine (Add-on)",
+      "Shake'ine ekle."
+    ],
+    "description": "Protein shake için ek seçenek.",
+    "price": 50,
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/creatine.svg`,
+    "imageAlt": "Creatine (Add-on) ürün illüstrasyonu",
+    "note": "SHAPE TRAINING CLUB · KALKAN",
+    "detail": "Shake ilavesi",
+    "ingredients": [],
+    "allergens": "İçerik ve alerjen bilgisi için ekibimize danışın.",
+    "theme": {
+      "base": "#071426",
+      "glow": "#75612c",
+      "accent": "#ffda28"
+    }
+  },
+  {
+    "id": "collagen",
+    "name": "Collagen (Add-on)",
+    "category": "Protein Shakes",
+    "categoryId": "shakes",
+    "sceneWord": "PROTEIN",
+    "headline": [
+      "Collagen (Add-on)",
+      "Shake'ine ekle."
+    ],
+    "description": "Protein shake için ek seçenek.",
+    "price": 50,
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/collagen.svg`,
+    "imageAlt": "Collagen (Add-on) ürün illüstrasyonu",
+    "note": "SHAPE TRAINING CLUB · KALKAN",
+    "detail": "Shake ilavesi",
+    "ingredients": [],
+    "allergens": "İçerik ve alerjen bilgisi için ekibimize danışın.",
+    "theme": {
+      "base": "#071426",
+      "glow": "#75612c",
+      "accent": "#ffda28"
+    }
+  },
+  {
+    "id": "pre-workout",
+    "name": "Pre-Workout Shot",
+    "category": "Energy / Pre-Workout",
+    "categoryId": "energy",
+    "sceneWord": "ENERGY",
+    "headline": [
+      "Pre-Workout Shot",
+      "Fuel your day."
+    ],
+    "description": "Antrenman öncesi içecek seçenekleri.",
+    "price": 150,
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/pre-workout.svg`,
+    "imageAlt": "Pre-Workout Shot ürün illüstrasyonu",
+    "note": "SHAPE TRAINING CLUB · KALKAN",
+    "detail": "SHAPE Bar",
+    "ingredients": [],
+    "allergens": "İçerik ve alerjen bilgisi için ekibimize danışın.",
+    "theme": {
+      "base": "#071426",
+      "glow": "#174e94",
+      "accent": "#ffda28"
+    }
+  },
+  {
+    "id": "redbull",
+    "name": "Redbull",
+    "category": "Energy / Pre-Workout",
+    "categoryId": "energy",
+    "sceneWord": "ENERGY",
+    "headline": [
+      "Redbull",
+      "Fuel your day."
+    ],
+    "description": "Antrenman öncesi içecek seçenekleri.",
+    "price": 150,
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/redbull.svg`,
+    "imageAlt": "Redbull ürün illüstrasyonu",
+    "note": "SHAPE TRAINING CLUB · KALKAN",
+    "detail": "SHAPE Bar",
+    "ingredients": [],
+    "allergens": "İçerik ve alerjen bilgisi için ekibimize danışın.",
+    "theme": {
+      "base": "#071426",
+      "glow": "#174e94",
+      "accent": "#ffda28"
+    }
+  },
+  {
+    "id": "l-carnitine",
+    "name": "L-Carnitine Shot",
+    "category": "Energy / Pre-Workout",
+    "categoryId": "energy",
+    "sceneWord": "ENERGY",
+    "headline": [
+      "L-Carnitine Shot",
+      "Fuel your day."
+    ],
+    "description": "Antrenman öncesi içecek seçenekleri.",
+    "price": 150,
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/l-carnitine.svg`,
+    "imageAlt": "L-Carnitine Shot ürün illüstrasyonu",
+    "note": "SHAPE TRAINING CLUB · KALKAN",
+    "detail": "SHAPE Bar",
+    "ingredients": [],
+    "allergens": "İçerik ve alerjen bilgisi için ekibimize danışın.",
+    "theme": {
+      "base": "#071426",
+      "glow": "#174e94",
+      "accent": "#ffda28"
+    }
+  },
+  {
+    "id": "shape-booster",
+    "name": "Shape Special Booster",
+    "category": "Energy / Pre-Workout",
+    "categoryId": "energy",
+    "sceneWord": "ENERGY",
+    "headline": [
+      "Shape Special Booster",
+      "Fuel your day."
+    ],
+    "description": "Antrenman öncesi içecek seçenekleri.",
+    "price": 250,
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/shape-booster.svg`,
+    "imageAlt": "Shape Special Booster ürün illüstrasyonu",
+    "note": "SHAPE TRAINING CLUB · KALKAN",
+    "detail": "SHAPE Bar",
+    "ingredients": [],
+    "allergens": "İçerik ve alerjen bilgisi için ekibimize danışın.",
+    "theme": {
+      "base": "#071426",
+      "glow": "#174e94",
+      "accent": "#ffda28"
+    }
+  },
+  {
+    "id": "small-water",
+    "name": "S. Water",
+    "category": "Water",
+    "categoryId": "water",
+    "sceneWord": "HYDRATE",
+    "headline": [
+      "S. Water",
+      "Fuel your day."
+    ],
+    "description": "Antrenman boyunca su molası.",
+    "price": 30,
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/small-water.svg`,
+    "imageAlt": "S. Water ürün illüstrasyonu",
+    "note": "SHAPE TRAINING CLUB · KALKAN",
+    "detail": "SHAPE Bar",
+    "ingredients": [],
+    "allergens": "İçerik ve alerjen bilgisi için ekibimize danışın.",
+    "theme": {
+      "base": "#071426",
+      "glow": "#245676",
+      "accent": "#ffda28"
+    }
+  },
+  {
+    "id": "large-water",
+    "name": "L. Water",
+    "category": "Water",
+    "categoryId": "water",
+    "sceneWord": "HYDRATE",
+    "headline": [
+      "L. Water",
+      "Fuel your day."
+    ],
+    "description": "Antrenman boyunca su molası.",
+    "price": 50,
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/large-water.svg`,
+    "imageAlt": "L. Water ürün illüstrasyonu",
+    "note": "SHAPE TRAINING CLUB · KALKAN",
+    "detail": "SHAPE Bar",
+    "ingredients": [],
+    "allergens": "İçerik ve alerjen bilgisi için ekibimize danışın.",
+    "theme": {
+      "base": "#071426",
+      "glow": "#245676",
+      "accent": "#ffda28"
+    }
+  },
+  {
+    "id": "mineral-water",
+    "name": "Soda / Mineral Water",
+    "category": "Water",
+    "categoryId": "water",
+    "sceneWord": "HYDRATE",
+    "headline": [
+      "Soda / Mineral Water",
+      "Fuel your day."
+    ],
+    "description": "Antrenman boyunca su molası.",
+    "price": 50,
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/mineral-water.svg`,
+    "imageAlt": "Soda / Mineral Water ürün illüstrasyonu",
+    "note": "SHAPE TRAINING CLUB · KALKAN",
+    "detail": "SHAPE Bar",
+    "ingredients": [],
+    "allergens": "İçerik ve alerjen bilgisi için ekibimize danışın.",
+    "theme": {
+      "base": "#071426",
+      "glow": "#245676",
+      "accent": "#ffda28"
+    }
+  }
 ];

@@ -2,27 +2,27 @@ import type { MenuCategory } from "@/types/product";
 
 export const categories: MenuCategory[] = [
   {
-    id: "burgers",
-    name: "Burgerler",
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/burger.webp`,
-    description: "Smash ya da çıtır tavuk. Favori burgerini keşfet.",
+    "id": "coffee",
+    "name": "Coffee",
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/filter-coffee.svg`,
+    "description": "Kahve molanı SHAPE'te ver."
   },
   {
-    id: "asia",
-    name: "Asia Kitchen",
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/ramen.webp`,
-    description: "Sıcak bir kase ramen, wok'tan taze noodle.",
+    "id": "shakes",
+    "name": "Protein Shakes",
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/protein-shake.svg`,
+    "description": "Gerçek meyveler, whey, buz ve su ile hazırlanan protein shake seçenekleri."
   },
   {
-    id: "pizza",
-    name: "Pizza",
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/pizza.webp`,
-    description: "Napolitan hamur, kabarık kenarlar, sevdiğin malzemeler.",
+    "id": "energy",
+    "name": "Energy / Pre-Workout",
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/pre-workout.svg`,
+    "description": "Antrenman öncesi içecek seçenekleri."
   },
   {
-    id: "drinks",
-    name: "İçecekler",
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/lemonade.webp`,
-    description: "Yemeğin yanına serin ve ferah bir eşlikçi.",
-  },
+    "id": "water",
+    "name": "Water",
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/small-water.svg`,
+    "description": "Antrenman boyunca su molası."
+  }
 ];

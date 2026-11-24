@@ -55,11 +55,11 @@ export function MenuSection({
               <details>
                 <summary>İçindekiler</summary>
                 <p>
-                  {product.ingredients.join(", ")}
+                  {product.ingredients.length ? product.ingredients.join(", ") : "Bilgi için ekibimize danışın."}
                   <br />
                   <strong>Alerjenler:</strong> {product.allergens}
                   <br />
-                  Demo içeriktir; gerçek reçete ile doğrulayın.
+                  
                 </p>
               </details>
               <button

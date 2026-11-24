@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 export const metadata: Metadata = {
-  title: "Kalkan Kitchen — Dört farklı dünya, aynı sofrada",
+  title: "SHAPE Bar — Training Club Kalkan",
   description:
-    "Burgerler, Asia Kitchen, pizza ve içecekler. Kalkan Kitchen’ın premium menü deneyimini keşfet.",
+    "Coffee, Protein Shakes, Energy & Pre-Workout, Water. SHAPE Bar Kalkan menüsü.",
   robots: { index: false, follow: false },
 };
 export default function RootLayout({

@@ -18,7 +18,7 @@ import { MenuSection } from "./menu-section";
 import { BrandMark, Icon } from "./icons";
 
 export function RestaurantDemo() {
-  const [categoryId, setCategoryId] = useState("pizza");
+  const [categoryId, setCategoryId] = useState("coffee");
   const category = categories.find((item) => item.id === categoryId)!;
   const categoryProducts = productsInCategory(products, categoryId);
   const [active, setActive] = useState(products[0]);
@@ -132,18 +132,18 @@ export function RestaurantDemo() {
           ))}
         </div>
         <header className="site-header">
-          <a className="brand" href="#" aria-label="Kalkan Kitchen ana sayfa">
+          <a className="brand" href="#" aria-label="SHAPE Training Club ana sayfa">
             <BrandMark />
             <span>
-              KALKAN<small>KITCHEN</small>
+              SHAPE<small>TRAINING CLUB</small>
             </span>
           </a>
           <nav aria-label="Ana menü">
             <a href="#menu">Menü</a>
-            <a href="#hikayemiz">Hikâyemiz</a>
+            <a href="#hikayemiz">Shake Nutrition</a>
           </nav>
           <div className="header-right">
-            <span className="location-label">KALKAN, AKDENİZ RUHU</span>
+            <span className="location-label">KALKAN · SHAPE BAR</span>
             <button
               ref={cartButton}
               className="cart-button"
@@ -173,7 +173,7 @@ export function RestaurantDemo() {
           />
         </main>
         <div className="experience-footer">
-          <span>İYİ YEMEK, GÜZEL BİR GÜNÜN BAŞLANGICI.</span>
+          <span>TRAIN HARD. REFUEL. REPEAT.</span>
           <button onClick={() => setMotion((v) => !v)} aria-pressed={!motion}>
             <Icon name={motion ? "pause" : "play"} width={14} height={14} />
             {motion ? "Hareketi durdur" : "Hareketi başlat"}
@@ -191,22 +191,20 @@ export function RestaurantDemo() {
       <section id="hikayemiz" className="story-section section-shell">
         <div className="story-emblem">
           <BrandMark />
-          <span>KALKAN KITCHEN</span>
+          <span>SHAPE TRAINING CLUB</span>
         </div>
         <div>
-          <p className="eyebrow">SOFRAMIZDA YERİN VAR.</p>
+          <p className="eyebrow">SHAKE NUTRITION · 1 SCOOP</p>
           <h2>
-            Uzaklardan ilham.
+            Fuel your
             <br />
-            <em>İçten gelen lezzet.</em>
+            <em>performance.</em>
           </h2>
           <p>
-            Napoli’nin sokağından bir dilim, Japon mutfağından bir kase. Farklı
-            yerlerden sevdiğimiz tatları Kalkan’ın rahatlığıyla aynı sofrada
-            buluşturuyoruz.
+            Protein shake besin değerleri (menüde belirtilen):
           </p>
-          <a className="story-link" href="#menu">
-            Sofraya buyur <Icon name="arrow" />
+          <div className="shape-nutrition">{[["25 g","Protein"],["5 g","BCAA"],["4 g","Glutamine"],["1.7 g","Sugar"],["1.8 g","Fat"],["4 g","Carbohydrate"]].map(([value,label]) => <div key={label}><strong>{value}</strong><span>{label}</span></div>)}</div><p>Gluten Free · Creatine +50 TL · Collagen +50 TL</p><a className="story-link" href="#menu">
+            Menüyü keşfet <Icon name="arrow" />
           </a>
         </div>
       </section>
@@ -214,11 +212,11 @@ export function RestaurantDemo() {
         <a className="brand" href="#">
           <BrandMark />
           <span>
-            KALKAN<small>KITCHEN</small>
+            SHAPE<small>TRAINING CLUB</small>
           </span>
         </a>
-        <p>Biraz güneş. Biraz sohbet. Bolca lezzet.</p>
-        <small>Konsept menü · Demo deneyimi</small>
+        <p>More than a gym. A community in motion.</p>
+        <small>SHAPE Bar · Kalkan</small>
       </footer>
       <div
         className={`toast ${toast ? "visible" : ""}`}

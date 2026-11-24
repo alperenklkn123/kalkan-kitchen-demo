@@ -110,7 +110,7 @@ export function CartDrawer({
               </div>
               <p className="demo-note">
                 Bu bir deneyim demosu. Sipariş oluşturulmaz, ödeme alınmaz.
-                Ürünler ve fiyatlar örnektir.
+                Fiyatlar SHAPE Bar menüsünden alınmıştır.
               </p>
               <button className="add-button" onClick={onClose}>
                 Keşfetmeye devam et <Icon name="arrow" />

@@ -64,7 +64,7 @@ export function ProductCarousel({
       <div className="hero-layout">
         <div className="hero-copy">
           <p className="eyebrow">
-            <span className="little-star">✳</span> KALKAN’DAN, İŞTAHLA.
+            <span className="little-star">✳</span> SHAPE BAR · KALKAN
           </p>
           <div
             key={product.id}
@@ -73,7 +73,7 @@ export function ProductCarousel({
             aria-atomic="true"
           >
             <p className="product-kicker">
-              0{active + 1} / {product.category}
+              {String(active + 1).padStart(2, "0")} / {product.category}
             </p>
             <h1>
               {product.headline[0]}
@@ -96,7 +96,7 @@ export function ProductCarousel({
             </div>
             <div className="ingredients">
               <Icon name="leaf" />
-              {product.ingredients.join(" · ")}
+              {product.ingredients.length ? product.ingredients.join(" · ") : "SHAPE TRAINING CLUB"}
             </div>
           </div>
         </div>
@@ -113,7 +113,7 @@ export function ProductCarousel({
           <div
             className="food-stage"
             tabIndex={0}
-            aria-label={`${product.name}. Yemek değiştirmek için sola veya sağa sürükleyin ya da yön tuşlarını kullanın.`}
+            aria-label={`${product.name}. Ürün değiştirmek için sola veya sağa sürükleyin ya da yön tuşlarını kullanın.`}
             onKeyDown={(e) => {
               if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
                 e.preventDefault();
@@ -168,9 +168,9 @@ export function ProductCarousel({
             </div>
           </div>
           <div className="chef-seal" aria-hidden="true">
-            <span>İYİ MALZEME</span>
+            <span>TRAIN HARD</span>
             <BrandMark />
-            <span>İYİ YEMEK</span>
+            <span>REFUEL</span>
           </div>
           <p key={product.note} className="food-note">
             {product.note}
@@ -178,24 +178,24 @@ export function ProductCarousel({
           </p>
           <div className="stage-controls">
             <span className="drag-hint">
-              <span aria-hidden="true">⟷</span> Lezzeti keşfetmek için kaydır
+              <span aria-hidden="true">⟷</span> Ürünleri keşfetmek için kaydır
             </span>
             <div className="flex items-center gap-3">
               <button
                 className="circle-button previous"
                 onClick={() => select(active - 1)}
-                aria-label="Önceki yemek"
+                aria-label="Önceki ürün"
               >
                 <Icon name="arrow" />
               </button>
               <span className="slide-count">
                 0{active + 1}
-                <span> / 0{products.length}</span>
+                <span> / {String(products.length).padStart(2, "0")}</span>
               </span>
               <button
                 className="circle-button"
                 onClick={() => select(active + 1)}
-                aria-label="Sonraki yemek"
+                aria-label="Sonraki ürün"
               >
                 <Icon name="arrow" />
               </button>
