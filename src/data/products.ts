@@ -11,7 +11,7 @@ export const products: Product[] = [
     description:
       "İncecik bir taban, kabaran kenarlar. Domates, mozzarella ve taze fesleğenin en sade, en güzel hâli.",
     price: 420,
-    image: "/food/pizza.webp",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/pizza.webp`,
     imageAlt: "Kabarık kenarlı, mozzarella ve taze fesleğenli Napolitan pizza",
     note: "Az malzeme. Çok karakter.",
     detail: "Napolitan usulü · 30 cm",
@@ -33,7 +33,7 @@ export const products: Product[] = [
     description:
       "Yoğun miso suyu, ipeksi noodle, shiitake mantarı ve tam kıvamında yumurta. Her kaşıkta biraz daha iyi.",
     price: 390,
-    image: "/food/ramen.webp",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/ramen.webp`,
     imageAlt: "Mantar, yeşil soğan ve iki yarım yumurtalı miso ramen kasesi",
     note: "İyi şeyler zaman ister.",
     detail: "Miso suyu · 1 kase",
@@ -55,7 +55,7 @@ export const products: Product[] = [
     description:
       "İki ince köfte, eriyen cheddar ve yumuşacık brioche. Biraz çıtır, biraz dağınık, tam olması gerektiği gibi.",
     price: 460,
-    image: "/food/burger.webp",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/burger.webp`,
     imageAlt: "Brioche ekmeğinde çift köfteli, cheddar peynirli smash burger",
     note: "İki kat lezzet. Tek favori.",
     detail: "Çift köfte · Brioche",
@@ -77,7 +77,7 @@ export const products: Product[] = [
     description:
       "Altın renkli çıtır tavuk, taze marul ve ev sosu. Yumuşak brioche içinde bolca lezzet.",
     price: 410,
-    image: "/food/chicken-burger.webp",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/chicken-burger.webp`,
     imageAlt: "Brioche ekmeğinde çıtır tavuk burger",
     note: "Çıtırtısı bile güzel.",
     detail: "Çıtır tavuk · Brioche",
@@ -99,7 +99,7 @@ export const products: Product[] = [
     description:
       "Wok’ta çevrilmiş noodle, rengârenk sebzeler ve susam. Hafif çıtır dokular, dengeli bir sos.",
     price: 340,
-    image: "/food/wok-noodles.webp",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/wok-noodles.webp`,
     imageAlt: "Biber, brokoli ve havuçlu sebzeli wok noodle kasesi",
     note: "Renkli, taze, bol lezzetli.",
     detail: "Sebzeli noodle · 1 kase",
@@ -121,7 +121,7 @@ export const products: Product[] = [
     description:
       "Napolitan hamur üzerinde mozzarella, mantar ve kekik. Sade malzemelerin doyurucu buluşması.",
     price: 460,
-    image: "/food/funghi-pizza.webp",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/funghi-pizza.webp`,
     imageAlt: "Mozzarella, mantar ve kekikli Napolitan Funghi pizza",
     note: "Ormandan bir dokunuş.",
     detail: "Napolitan usulü · 30 cm",
@@ -144,7 +144,7 @@ export const products: Product[] = [
     description:
       "Limonun canlı tadı, buz ve taze nane. Yemeğine serin bir eşlikçi.",
     price: 120,
-    image: "/food/lemonade.webp",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/lemonade.webp`,
     imageAlt: "Buz, limon ve naneli limonata bardağı",
     note: "Tazeliğin en serin hâli.",
     detail: "Soğuk içecek · 350 ml",
@@ -166,7 +166,7 @@ export const products: Product[] = [
     description:
       "Demlenmiş çay, şeftalinin meyvemsi tadı ve bol buz. Günün temposuna küçük bir mola.",
     price: 110,
-    image: "/food/iced-tea.webp",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/iced-tea.webp`,
     imageAlt: "Buz ve şeftali dilimli soğuk çay bardağı",
     note: "Yavaşla. Bir yudum al.",
     detail: "Soğuk çay · 350 ml",

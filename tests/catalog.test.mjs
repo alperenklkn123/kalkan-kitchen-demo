@@ -26,9 +26,11 @@ test("each carousel only receives its category's products, and IDs are unique", 
 });
 
 test("every product and category image is included in the deliverable", () => {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
   for (const item of [...products, ...categories]) {
+    assert.ok(item.image.startsWith(`${basePath}/food/`), item.image);
     assert.ok(
-      existsSync(new URL(`../public${item.image}`, import.meta.url)),
+      existsSync(new URL(`../public${item.image.slice(basePath.length)}`, import.meta.url)),
       item.image,
     );
   }

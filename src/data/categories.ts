@@ -4,25 +4,25 @@ export const categories: MenuCategory[] = [
   {
     id: "burgers",
     name: "Burgerler",
-    image: "/food/burger.webp",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/burger.webp`,
     description: "Smash ya da çıtır tavuk. Favori burgerini keşfet.",
   },
   {
     id: "asia",
     name: "Asia Kitchen",
-    image: "/food/ramen.webp",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/ramen.webp`,
     description: "Sıcak bir kase ramen, wok'tan taze noodle.",
   },
   {
     id: "pizza",
     name: "Pizza",
-    image: "/food/pizza.webp",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/pizza.webp`,
     description: "Napolitan hamur, kabarık kenarlar, sevdiğin malzemeler.",
   },
   {
     id: "drinks",
     name: "İçecekler",
-    image: "/food/lemonade.webp",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/food/lemonade.webp`,
     description: "Yemeğin yanına serin ve ferah bir eşlikçi.",
   },
 ];
