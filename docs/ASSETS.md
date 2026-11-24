@@ -49,3 +49,7 @@ Use case: product-mockup. Asset: food cutout for premium restaurant carousel. On
 Yerleşik Imagegen ile beş ilave şeffaf ürün görseli üretildi ve alfa kanalı korunarak 1000 px WebP’ye optimize edildi: `public/food/chicken-burger.webp`, `funghi-pizza.webp`, `wok-noodles.webp`, `lemonade.webp`, `iced-tea.webp`. Bunlar örnek menü görselleridir. Dört yeni görselin tam promptları `category-image-prompts.json` içindedir.
 
 Funghi promptu: “Use case: product-mockup. Asset: isolated premium restaurant menu photography cutout. Subject: A whole Neapolitan mushroom pizza, puffy blistered golden crust, mozzarella cheese, sliced brown mushrooms and thyme. No basil or tomatoes on top. One entire item centered in a square canvas with 12% safe margins, three-quarter elevated view. Warm directional studio lighting from upper left, photorealistic appetizing texture. Truly transparent alpha background. No table, surface, backdrop, utensils, text, branding, watermark or background shadow. Match a high-end editorial food catalogue.”
+
+
+## SHAPE Bar fotoğraf güncellemesi
+20 menü ürünü için fotoğraf gerçekçiliğinde yapay zeka ile üretilmiş şeffaf arka planlı ürün görselleri kullanılır. Bunlar gerçek servis fotoğrafları değil, örnek menü görselleridir. Görseller `public/bar/` altında ayrı ayrı 800 × 800 WebP dosyalarıdır; animasyon, fiyat ve menü işlevleri korunur.
