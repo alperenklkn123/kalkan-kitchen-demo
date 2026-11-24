@@ -7,6 +7,7 @@ export interface Product {
   headline: [string, string];
   description: string;
   price: number;
+  comingSoon?: boolean;
   image: string;
   imageAlt: string;
   note: string;

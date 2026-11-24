@@ -54,7 +54,7 @@ export function RestaurantDemo() {
       setCart(
         normalizeCart(
           saved ? JSON.parse(saved) : [],
-          products.map((p) => p.id),
+          products.filter((p) => !p.comingSoon).map((p) => p.id),
         ),
       );
     } catch {}
@@ -71,6 +71,7 @@ export function RestaurantDemo() {
     }
   }, [cart, ready]);
   function add(product: Product, source?: HTMLElement) {
+    if (product.comingSoon) return;
     const atLimit =
       (cart.find((l) => l.id === product.id)?.quantity ?? 0) >= MAX_QUANTITY;
     setCart((lines) => changeQuantity(lines, product.id, 1));

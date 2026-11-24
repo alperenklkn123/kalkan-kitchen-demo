@@ -83,14 +83,15 @@ export function ProductCarousel({
             <p className="hero-description">{product.description}</p>
             <div className="product-price">
               <h2>{product.name}</h2>
-              <span>{formatPrice(product.price)}</span>
+              <span>{product.comingSoon ? "Yakında" : formatPrice(product.price)}</span>
             </div>
             <div className="hero-actions">
               <button
                 className="add-button"
+                disabled={product.comingSoon}
                 onClick={(e) => onAddToCart(product, e.currentTarget)}
               >
-                Sepete Ekle <Icon name="plus" />
+                {product.comingSoon ? "Yakında" : "Sepete Ekle"} <Icon name="plus" />
               </button>
               <span className="portion">{product.detail}</span>
             </div>
@@ -110,6 +111,7 @@ export function ProductCarousel({
           </span>
           <div className="orbit orbit-one" aria-hidden="true" />
           <div className="orbit orbit-two" aria-hidden="true" />
+          <div className="shape-light-halo" aria-hidden="true" />
           <div
             className="food-stage"
             tabIndex={0}
@@ -189,7 +191,7 @@ export function ProductCarousel({
                 <Icon name="arrow" />
               </button>
               <span className="slide-count">
-                0{active + 1}
+                {String(active + 1).padStart(2, "0")}
                 <span> / {String(products.length).padStart(2, "0")}</span>
               </span>
               <button

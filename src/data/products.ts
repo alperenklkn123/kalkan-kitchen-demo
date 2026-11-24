@@ -408,5 +408,96 @@ export const products: Product[] = [
       "glow": "#245676",
       "accent": "#ffda28"
     }
+  },
+  {
+    "id": "banana-protein-bowl",
+    "name": "Banana Protein Bowl",
+    "category": "Protein Bowls",
+    "categoryId": "bowls",
+    "sceneWord": "BOWLS",
+    "headline": [
+      "Banana Protein Bowl",
+      "Fuel your recovery."
+    ],
+    "description": "Muz, Yulaf, Whey protein, Fıstık ezmesi. Önerilen menü ürünü.",
+    "price": 0,
+    "comingSoon": true,
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/banana-protein-bowl.svg`,
+    "imageAlt": "Banana Protein Bowl üç boyutlu görünümlü ürün illüstrasyonu",
+    "note": "SHAPE BAR · COMING SOON",
+    "detail": "Yakında · Fiyat belirlenecek",
+    "ingredients": [
+      "Muz",
+      "Yulaf",
+      "Whey protein",
+      "Fıstık ezmesi"
+    ],
+    "allergens": "Taslak reçete. Alerjenler servis öncesi doğrulanacaktır.",
+    "theme": {
+      "base": "#071426",
+      "glow": "#647b35",
+      "accent": "#ffda28"
+    }
+  },
+  {
+    "id": "berry-protein-bowl",
+    "name": "Berry Protein Bowl",
+    "category": "Protein Bowls",
+    "categoryId": "bowls",
+    "sceneWord": "BOWLS",
+    "headline": [
+      "Berry Protein Bowl",
+      "Fuel your recovery."
+    ],
+    "description": "Orman meyveleri, Yoğurt, Whey protein, Granola. Önerilen menü ürünü.",
+    "price": 0,
+    "comingSoon": true,
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/berry-protein-bowl.svg`,
+    "imageAlt": "Berry Protein Bowl üç boyutlu görünümlü ürün illüstrasyonu",
+    "note": "SHAPE BAR · COMING SOON",
+    "detail": "Yakında · Fiyat belirlenecek",
+    "ingredients": [
+      "Orman meyveleri",
+      "Yoğurt",
+      "Whey protein",
+      "Granola"
+    ],
+    "allergens": "Taslak reçete. Alerjenler servis öncesi doğrulanacaktır.",
+    "theme": {
+      "base": "#071426",
+      "glow": "#647b35",
+      "accent": "#ffda28"
+    }
+  },
+  {
+    "id": "chocolate-protein-bowl",
+    "name": "Chocolate Protein Bowl",
+    "category": "Protein Bowls",
+    "categoryId": "bowls",
+    "sceneWord": "BOWLS",
+    "headline": [
+      "Chocolate Protein Bowl",
+      "Fuel your recovery."
+    ],
+    "description": "Kakao, Muz, Whey protein, Granola. Önerilen menü ürünü.",
+    "price": 0,
+    "comingSoon": true,
+    "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/chocolate-protein-bowl.svg`,
+    "imageAlt": "Chocolate Protein Bowl üç boyutlu görünümlü ürün illüstrasyonu",
+    "note": "SHAPE BAR · COMING SOON",
+    "detail": "Yakında · Fiyat belirlenecek",
+    "ingredients": [
+      "Kakao",
+      "Muz",
+      "Whey protein",
+      "Granola"
+    ],
+    "allergens": "Taslak reçete. Alerjenler servis öncesi doğrulanacaktır.",
+    "theme": {
+      "base": "#071426",
+      "glow": "#647b35",
+      "accent": "#ffda28"
+    }
   }
+
 ];

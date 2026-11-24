@@ -24,5 +24,6 @@ export const categories: MenuCategory[] = [
     "name": "Water",
     "image": `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/small-water.svg`,
     "description": "Antrenman boyunca su molası."
-  }
+  },
+  { id: "bowls", name: "Protein Bowls", image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bar/banana-protein-bowl.svg`, description: "Antrenman sonrası için önerilen bowl çeşitleri. Yakında." }
 ];

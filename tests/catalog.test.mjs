@@ -8,16 +8,16 @@ import { productsInCategory } from "../src/lib/catalog.ts";
 test("requested categories have the correct order and distinct IDs", () => {
   assert.deepEqual(
     categories.map((c) => c.name),
-    ["Coffee", "Protein Shakes", "Energy / Pre-Workout", "Water"],
+    ["Coffee", "Protein Shakes", "Energy / Pre-Workout", "Water", "Protein Bowls"],
   );
-  assert.equal(new Set(categories.map((c) => c.id)).size, 4);
+  assert.equal(new Set(categories.map((c) => c.id)).size, 5);
 });
 
 test("each carousel only receives its category's products, and IDs are unique", () => {
   assert.equal(new Set(products.map((p) => p.id)).size, products.length);
   const grouped = categories.flatMap((category) => {
     const list = productsInCategory(products, category.id);
-    assert.equal(list.length, ({ coffee: 5, shakes: 5, energy: 4, water: 3 })[category.id]);
+    assert.equal(list.length, ({ coffee: 5, shakes: 5, energy: 4, water: 3, bowls: 3 })[category.id]);
     assert.ok(list.every((p) => p.categoryId === category.id));
     return list;
   });

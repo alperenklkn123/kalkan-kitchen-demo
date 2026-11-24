@@ -48,7 +48,7 @@ export function MenuSection({
             </div>
             <div className="menu-card-title">
               <h3>{product.name}</h3>
-              <span>{formatPrice(product.price)}</span>
+              <span>{product.comingSoon ? "Yakında" : formatPrice(product.price)}</span>
             </div>
             <p>{product.detail}</p>
             <div className="menu-card-bottom">
@@ -64,6 +64,7 @@ export function MenuSection({
               </details>
               <button
                 className="menu-add"
+                disabled={product.comingSoon}
                 onClick={(e) => onAddToCart(product, e.currentTarget)}
                 aria-label={`${product.name} sepete ekle`}
               >
